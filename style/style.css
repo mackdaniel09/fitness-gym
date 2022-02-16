@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  /* overflow-x: hidden; */
+}
+#btn-menu {
+  font-size: 1.2rem;
+  color: #fff;
+  text-align: right;
+  text-decoration: none;
+  display: none;
+}
+.btn {
+  padding: 0.5rem 1rem;
+  text-transform: capitalize;
+  border: 1px solid #bae604;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 20px 0;
+  border-radius: 3px;
+}
+.btn-transparent {
+  border: 1px solid #bae604;
+  color: #bae604;
+  transition: all 0.3s ease-in-out;
+}
+.btn-transparent:hover {
+  background-color: #bae604;
+  color: #000;
+}
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
+    url(/images/header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+nav {
+  padding: 1.5rem 5%;
+  position: relative;
+}
+nav .navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+nav .navbar li {
+  list-style: none;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+nav .navbar li a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+nav .navbar li a:hover {
+  color: #bae604;
+}
+header .main-content {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+header .main-content h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #fff;
+}
+header .main-content .btn {
+  margin: auto;
+}
+.title {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 30px 0;
+}
+.title h2 {
+  font-size: 3rem;
+  color: #bae604;
+  font-weight: 500;
+  text-decoration: underline;
+  padding: 0.5rem;
+}
+.card-content {
+  width: 100%;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+}
+.card-content .card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.trainers .card-content {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px;
+}
+.trainers .card {
+  display: flex;
+  flex-direction: column;
+}
+
+.trainers .card .info {
+  padding: 0.5rem;
+  background-color: #bae604;
+  text-align: center;
+}
+.plan .card {
+  border: 1px solid #000;
+  box-shadow: 5px 1px 3px #333;
+  text-align: center;
+}
+.plan .card .card-heading {
+  padding: 1rem;
+  background-color: #bae604;
+}
+.plan .card .card-body {
+  padding: 1rem;
+}
+.plan .card .card-body h3 {
+  color: #bae604;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.plan .card .card-body h3 span {
+  font-size: 3rem;
+}
+.plan .card .card-body h4 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.plan .card .card-body .card-text li {
+  padding: 0.5rem 0;
+}
+.register {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.register form {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+.register form > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.register form > div input {
+  width: 100%;
+  margin: 10px;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  color: #fff;
+}
+.register form textarea {
+  width: 100%;
+  margin: 10px;
+  display: block;
+  background-color: transparent;
+}
+.register form .btn {
+  margin: auto;
+}
+@media screen and (max-width: 596px) {
+  #btn-menu {
+    display: block;
+  }
+  nav .navbar {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8));
+    border: 1px solid #fff;
+    transition: all 0.2s ease-in-out;
+  }
+  nav .navbar.active {
+    left: 0;
+  }
+  nav .navbar li {
+    margin: 15px 0;
+  }
+  header .main-content h1 {
+    font-size: 3rem;
+  }
+  .title h2 {
+    font-size: 1rem;
+    width: 100%;
+  }
+  .card-content,
+  .trainers .card-content {
+    grid-template-columns: 1fr;
+  }
+  .register form > div {
+    flex-direction: column;
+  }
+}
