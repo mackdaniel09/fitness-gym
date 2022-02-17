@@ -140,6 +140,7 @@ header .main-content .btn {
 }
 .plan .card .card-body .card-text li {
   padding: 0.5rem 0;
+  list-style: none;
 }
 .register {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -168,9 +169,18 @@ header .main-content .btn {
   margin: 10px;
   display: block;
   background-color: transparent;
+  resize: none;
 }
 .register form .btn {
   margin: auto;
+  background-color: transparent;
+  margin-left: 10px;
+}
+footer {
+  background-color: #666;
+  color: #fff;
+  padding: 0.5rem 0;
+  text-align: center;
 }
 @media screen and (max-width: 596px) {
   #btn-menu {
